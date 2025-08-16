@@ -1,4 +1,4 @@
-name: Test & Deploy WorkFlow
+name: Test-Deploy-WorkFlow
 on: push
 jobs:
   test:
