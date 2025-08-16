@@ -1,7 +1,7 @@
 name: Test & Deploy WorkFlow
 on: push
 jobs:
-  Lint-Test-Deploy:
+  deploy:
   runs-on: ubuntu-latest
   steps:
     - name: Get code
