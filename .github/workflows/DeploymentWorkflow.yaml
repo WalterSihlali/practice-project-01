@@ -18,8 +18,8 @@ jobs:
         npm lint
     - name: Run tests
       run: |
-      echo "Test is running"
-      npm test
+        echo "Test is running"
+        npm test
     - name: deploy
       run: |
         npm build
