@@ -2,25 +2,25 @@ name: Test-Deploy-WorkFlow
 on: push
 jobs:
   test:
-     runs-on: ubuntu-latest
-     steps:
+    runs-on: ubuntu-latest
+    steps:
       - name: Get code
-      uses: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Install NodeJS
-      uses: actions/setup-node@v3
-      with:
-          node-version: 18
+        uses: actions/setup-node@v3
+          with:
+            node-version: 18
       - name: Install dependencies
       run: npm ci
-      - name: lint
+        - name: lint
       run: |
         echo "Lint is running"
         npm lint
-      - name: Run tests
+        - name: Run tests
       run: |
         echo "Test is running"
         npm test
-      - name: deploy
+        - name: deploy
       run: |
         npm build
         echo "Deploying ..."
